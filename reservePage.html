@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забронировать</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrapper stretch--content">
+        <header class="header">
+            <div class="header__nav nav">
+                <div class="container">
+                    <div class="nav-inner">
+                        <a href="./index.html" class="nav__logo logo"><img src="Pages/logo.png" alt="logo"
+                                style="width: 60px; height:  auto;"></a>
+
+                        <div class="nav__middle">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
+                                <li class="nav__item"><a href="./contactUsPage.html" class="nav__link">Обратная
+                                        связь</a>
+                                </li>
+                                <li class="nav__item"><a href="./price.html" class="nav__link">Цены</a></li>
+                                <li class="nav__item"><a href="./index1.html" class="nav__link">Контакты</a></li>
+                            </ul>
+                        </div>
+
+                        <a href="./reservePage.html" class="nav__button">Забронировать</a>
+
+
+                        <!-- burger menu -->
+                        <input type="checkbox" id="m1" class="hidden-menu-ticker">
+                        <label class="btn-menu" for="m1">
+                            <span class="first"></span>
+                            <span class="second"></span>
+                            <span class="third"></span>
+                        </label>
+
+                        <div class="hidden-menu">
+                            <li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
+                            <li class="nav__item"><a href="./contactUsPage.html" class="nav__link">Обратная
+                                    связь</a>
+                            </li>
+                            <li class="nav__item"><a href="./price.html" class="nav__link">Цены</a></li>
+                            <li class="nav__item"><a href="./index1.html" class="nav__link">Контакты</a></li>
+
+                            <li class="nav__item"><a href="./reservePage.html"
+                                    class="nav__button nav__button--visible">Забронировать</a></li>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__line"></div>
+        </header>
+
+        <main class="main">
+            <section class="main__reserve reserve">
+                <div class="container">
+                    <div class="reserve-inner">
+                        <h2 class="reserve__title">ЗАБРОНИРОВАТЬ</h2>
+
+                        <form class="reserve__form form">
+
+                            <input type="text" placeholder="Ваше имя" class="reserve__input" name="name">
+                            <input type="tel" placeholder="Ваш номер телефона" class="reserve__input" name="tel">
+                            <input type="text" placeholder="Количество людей" class="reserve__input" name="countPeople">
+                            <input type="text" placeholder="Введите желаемую дату и время" class="reserve__input"
+                                name="date">
+
+                            <select id="places" name="places" class="reserve__large-input" name="room">
+                                <option value="general">Общий</option>
+                                <option value="vip10">VIP 10 мест</option>
+                                <option value="vip5">VIP 5 мест</option>
+                            </select>
+
+                            <a href="#" class="reserve__button form__button">Забронировать</a>
+                        </form>
+
+                        <div id="open-modal" class="modal-window">
+                            <div>
+                                <a href="#" title="Close" class="modal-close">Закрыть</a>
+
+                                <div class="modal__text">Мы с вами свяжемся</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <img src="Pages/snake_footer_logo.svg" style="width: 200px; height: auto;" alt=""
+                        class="footer__logo">
+
+                    <div class="footer__bio">
+                        <a href="#"><img src="Pages/vk.png" alt="vk"></a>
+                        <a href=""><img src="Pages/youtube.svg" alt="youtube"></a>
+                    </div>
+
+                    <div class="footer__info">
+                        <p class="footer__email">franchise@snake.com</p>
+
+                        <p class="footer__madeBy">Создание сайта - Даниил</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
